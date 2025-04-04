@@ -4,41 +4,41 @@ export function Cards() {
         {
             name: 'Bill Mahoney',
             rol: 'Product Owner',
-            image: './src/images/photo1.png',
+            image: './images/photo1.png',
         },
         {
             name: 'Saba Cabrera',
             rol: 'Art Director',
-            image: './src/images/photo2.png',
+            image: './images/photo2.png',
         },
         {
             name: 'Shae Le',
             rol: 'Teach Lead',
-            image: './src/images/photo3.png',
+            image: './images/photo3.png',
         },
         {
             name: 'Skylah Lu',
             rol: 'UX Designer',
-            image: './src/images/photo4.png',
+            image: './images/photo4.png',
         },
         {
             name: 'Griff Richards',
             rol: 'Developers',
-            image: './src/images/photo5.png',
+            image: './images/photo5.png',
         },
         {
             name: 'Stan Jhon',
             rol: 'Developers',
-            image: './src/images/photo6.png',
+            image: './images/photo6.png',
         }
     ]
     return (
         <>
             {teamMembers.map((member, index) => (
-                <div className="relative ml-4 mr-4 even:mt-8 md:nth-[3n+2]:mt-18"
+                <div className="relative md:relative ml-4 mr-4 even:mt-8 md:nth-[3n+2]:mt-18"
                     key={index}>
                 <img src={member.image} alt={member.name} />
-                <p className='absolute top-0 right-0 text-[15px] md:text-2xl text-gray-700'
+                <p className='absolute md:absolute top-0 right-0 text-[15px] md:text-2xl text-gray-700'
                     style={{
                         writingMode: 'vertical-rl',
                         transform: 'translateY(10%) translateX(90%)',
@@ -51,7 +51,5 @@ export function Cards() {
             ))}      
        
         </>
-
     )
-
 }
